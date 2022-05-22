@@ -1,6 +1,8 @@
 package com.sumon.mygrocerystore;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.TextView;
@@ -14,6 +16,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.sumon.mygrocerystore.activities.HomeActivity;
 import com.sumon.mygrocerystore.models.UserModel;
 
 import androidx.annotation.NonNull;
@@ -61,6 +64,21 @@ public class MainActivity extends AppCompatActivity {
         TextView headerName = headerView.findViewById(R.id.nav_header_name);
         TextView headerEmail = headerView.findViewById(R.id.nav_header_email);
 
+        Menu menuNav = navigationView.getMenu();
+        MenuItem logoutItem = menuNav.findItem(R.id.nav_logout);
+
+        logoutItem.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+
+                auth.signOut();
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(intent);
+                finishAffinity();
+
+                return false;
+            }
+        });
 
         database.getReference().child("Users").child(FirebaseAuth.getInstance().getUid())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
@@ -82,6 +100,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

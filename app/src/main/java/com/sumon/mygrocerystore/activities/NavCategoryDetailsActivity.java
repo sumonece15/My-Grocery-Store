@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -45,10 +46,10 @@ public class NavCategoryDetailsActivity extends AppCompatActivity {
 
         nav_cat_details_rec = findViewById(R.id.nav_cat_details_rec);
         nav_cat_details_rec.setLayoutManager(new LinearLayoutManager(this));
-        nav_cat_details_rec.setAdapter(navCategoryDetailsAdapter);
 
         navCategoryDetailsModelList = new ArrayList<>();
         navCategoryDetailsAdapter = new NavCategoryDetailsAdapter(this, navCategoryDetailsModelList);
+        nav_cat_details_rec.setAdapter(navCategoryDetailsAdapter);
 
         db = FirebaseFirestore.getInstance();
         String type = getIntent().getStringExtra("type");
@@ -66,6 +67,8 @@ public class NavCategoryDetailsActivity extends AppCompatActivity {
                         NavCategoryDetailsModel navCategoryDetailsModel = documentSnapshot.toObject(NavCategoryDetailsModel.class);
                         navCategoryDetailsModelList.add(navCategoryDetailsModel);
                         navCategoryDetailsAdapter.notifyDataSetChanged();
+
+                        Log.d("Sumon", String.valueOf(navCategoryDetailsModel));
 
                         progressBar.setVisibility(View.GONE);
                         nav_cat_details_rec.setVisibility(View.VISIBLE);

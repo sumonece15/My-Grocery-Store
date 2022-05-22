@@ -17,7 +17,8 @@
             android:theme="@style/Theme.MyGroceryStore.NoActionBar">
 
         </activity>
-        <activity android:name=".activities.NavCategoryDetailsActivity" />
+        <activity android:name=".activities.NavCategoryDetailsActivity"
+            android:theme="@style/Theme.MyGroceryStore.NoActionBar"/>
         <activity
             android:name=".activities.DetailsActivity"
             android:theme="@style/Theme.MyGroceryStore.NoActionBar" />

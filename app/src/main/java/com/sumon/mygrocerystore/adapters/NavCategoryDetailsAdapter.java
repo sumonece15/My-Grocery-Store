@@ -41,14 +41,7 @@ public class NavCategoryDetailsAdapter extends RecyclerView.Adapter<NavCategoryD
         holder.nav_cat_details_name.setText(navCategoryDetailsModelList.get(position).getName());
         holder.nav_cat_details_price.setText(navCategoryDetailsModelList.get(position).getPrice());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(context, NavCategoryDetailsActivity.class);
-                intent.putExtra("type", navCategoryDetailsModelList.get(position).getType());
-                context.startActivity(intent);
-            }
-        });
+        System.out.println(navCategoryDetailsModelList.get(position).getName());
 
     }
 

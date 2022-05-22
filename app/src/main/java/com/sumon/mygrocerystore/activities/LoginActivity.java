@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.sumon.mygrocerystore.MainActivity;
 import com.sumon.mygrocerystore.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -51,9 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 loginUser();
-                progressBar.setVisibility(View.VISIBLE);
             }
         });
     }
@@ -83,6 +82,7 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
+        progressBar.setVisibility(View.VISIBLE);
 
         //LogIn User
         auth.signInWithEmailAndPassword(userEmail, userPassword)
@@ -92,6 +92,9 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()){
                             progressBar.setVisibility(View.GONE);
                             Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            startActivity(intent);
+                            finishAffinity();
                         }
                         else {
                             progressBar.setVisibility(View.GONE);

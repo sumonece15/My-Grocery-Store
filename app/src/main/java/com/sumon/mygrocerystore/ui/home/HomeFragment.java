@@ -74,6 +74,7 @@ public class HomeFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
+
         popularRec = root.findViewById(R.id.popular_rec);
         exploreRec = root.findViewById(R.id.explore_rec);
         recommendedRec = root.findViewById(R.id.recommended_rec);

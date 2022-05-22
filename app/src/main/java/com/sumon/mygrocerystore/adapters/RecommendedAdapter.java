@@ -37,8 +37,8 @@ public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.
 
         Glide.with(context).load(recommendedModelList.get(position).getImg_url()).into(holder.recommended_img);
         holder.recommended_name.setText(recommendedModelList.get(position).getName());
-        holder.recommended_desc.setText(recommendedModelList.get(position).getName());
-        holder.recommended_rating.setText(recommendedModelList.get(position).getName());
+        holder.recommended_desc.setText(recommendedModelList.get(position).getDescription());
+        holder.recommended_rating.setText(String.valueOf(recommendedModelList.get(position).getPrice()));
 
 
     }
