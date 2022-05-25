@@ -37,6 +37,8 @@
             android:background="@drawable/search_gb"
             android:padding="13dp"
             android:hint="Search Your Item Here..."
+            android:textColor="@color/black"
+            android:textSize="15sp"
             android:textColorHint="#707070"
             android:drawablePadding="5dp"
             android:elevation="3dp"
