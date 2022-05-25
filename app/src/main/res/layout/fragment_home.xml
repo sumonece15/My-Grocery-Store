@@ -147,7 +147,6 @@
                 android:layout_weight="1"
                 android:text="Recommended"
                 android:textColor="@color/Grey"
-                android:textStyle="bold"
                 android:textSize="18sp"
                 />
 
