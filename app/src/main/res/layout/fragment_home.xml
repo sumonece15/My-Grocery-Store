@@ -107,7 +107,6 @@
                 android:layout_weight="1"
                 android:text="Explore Categories"
                 android:textColor="@color/Grey"
-                android:textStyle="bold"
                 android:textSize="18sp"
                 />
 
