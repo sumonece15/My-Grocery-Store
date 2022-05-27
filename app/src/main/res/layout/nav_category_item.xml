@@ -3,8 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="5dp"
-    android:layout_marginTop="7dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginTop="6dp"
     app:cardElevation="4dp"
     >
 
@@ -16,13 +17,14 @@
         >
 
 
-        <ImageView
+        <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/nav_category_img"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:src="@drawable/fruits"
             android:background="@drawable/border"
             android:scaleType="centerInside"
+            app:riv_corner_radius="5dp"
             />
 
 
