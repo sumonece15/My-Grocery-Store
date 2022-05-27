@@ -72,7 +72,7 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Price $"
-                   android:textSize="18sp"
+                   android:textSize="13sp"
                    android:textStyle="bold"
                    android:textColor="@color/Grey"
                    />
@@ -82,7 +82,7 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="30"
-                   android:textSize="18sp"
+                   android:textSize="13sp"
                    android:textStyle="bold"
                    android:textColor="@color/Grey"
                    />
