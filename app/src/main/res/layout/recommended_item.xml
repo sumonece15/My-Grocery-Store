@@ -38,6 +38,7 @@
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:text="Description"
+            android:textSize="11sp"
             android:textColor="@color/Grey"
             android:ellipsize="end"
             android:maxLines="1"
