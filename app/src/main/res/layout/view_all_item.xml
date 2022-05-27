@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:text="Name is here"
                 android:textColor="@color/Grey"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:ellipsize="end"
                 android:maxLines="1"
