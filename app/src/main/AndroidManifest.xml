@@ -7,10 +7,10 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/grocery_store"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/grocery_store"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyGroceryStore">
         <activity android:name=".activities.PlacedOrderActivity"
