@@ -53,6 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Description is here"
+                android:textSize="11sp"
                 android:textColor="@color/Grey"
                 android:ellipsize="end"
                 android:maxLines="2"
