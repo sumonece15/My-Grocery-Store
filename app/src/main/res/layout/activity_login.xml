@@ -44,7 +44,7 @@
         android:layout_marginTop="14dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/Grey"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
