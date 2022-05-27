@@ -55,7 +55,7 @@
         android:src="@drawable/ratingbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/details_img"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         />
 
@@ -66,7 +66,7 @@
         android:text="4.5"
         android:textColor="@color/Grey"
         android:textSize="13sp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toStartOf="@id/rating_img"
         app:layout_constraintTop_toBottomOf="@id/details_img"
         />
@@ -80,8 +80,8 @@
         android:textColor="@color/Grey"
         android:padding="12dp"
         android:justificationMode="inter_word"
-        android:textSize="11sp"
-        android:layout_marginTop="20dp"
+        android:textSize="13sp"
+        android:layout_marginTop="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/details_price"
