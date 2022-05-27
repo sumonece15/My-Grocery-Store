@@ -49,8 +49,8 @@
 
     <ImageView
         android:id="@+id/rating_img"
-        android:layout_width="75dp"
-        android:layout_height="35dp"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
         android:src="@drawable/ratingbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/details_img"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:text="4.5"
         android:textColor="@color/Grey"
-        android:textSize="20sp"
+        android:textSize="13sp"
         android:layout_marginTop="14dp"
         app:layout_constraintEnd_toStartOf="@id/rating_img"
         app:layout_constraintTop_toBottomOf="@id/details_img"
