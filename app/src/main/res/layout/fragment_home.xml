@@ -109,7 +109,7 @@
                 android:layout_weight="1"
                 android:text="Explore Categories"
                 android:textColor="@color/Grey"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 />
 
 
