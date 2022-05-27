@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="110dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="8dp"
     android:layout_marginBottom="6dp"
@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
         android:background="#DFFFD1"
         >
@@ -20,7 +20,7 @@
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/nav_category_img"
             android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_height="110dp"
             android:src="@drawable/fruits"
             android:background="@drawable/border"
             android:scaleType="centerInside"
@@ -55,6 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Description is here"
+                android:justificationMode="inter_word"
                 android:textSize="11sp"
                 android:textColor="@color/black"
                 android:ellipsize="end"
@@ -85,12 +86,13 @@
 
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
                 android:src="@drawable/ic_baseline_arrow_forward_ios_24"
                 android:layout_gravity="end"
-                android:layout_marginTop="15dp"
+                android:scaleType="centerInside"
                 android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
                 />
 
         </LinearLayout>
