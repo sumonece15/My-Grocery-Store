@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:textSize="22sp"
             android:text="No offers are available right now"
+            android:fontFamily="serif-monospace"
             android:textAlignment="center"
             android:textColor="@color/purple_700"
             app:layout_constraintEnd_toEndOf="parent"
