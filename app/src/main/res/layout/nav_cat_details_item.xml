@@ -39,9 +39,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name is here"
-                android:textSize="21sp"
+                android:textColor="@color/Grey"
+                android:textSize="15sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:singleLine="true"
@@ -52,8 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="product price"
-                android:textSize="19sp"
-                android:textStyle="bold"
+                android:textSize="13sp"
                 android:textColor="@color/purple_700"
                 />
 
@@ -61,33 +60,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="5dp"
                 >
 
 
                 <ImageView
                     android:id="@+id/add_items"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/add_circle"
-                    android:layout_marginLeft="6dp"
                     />
 
                 <TextView
                     android:id="@+id/quantity"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
                     android:text="1"
                     android:textStyle="bold"
-                    android:textSize="20sp"
+                    android:textSize="13sp"
                     android:textColor="@color/black"
-                    android:layout_gravity="center"
-                    android:layout_margin="6dp"
                     />
 
                 <ImageView
                     android:id="@+id/remove_items"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/remove_circle"
                     />
 
@@ -95,7 +93,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/nav_cat_details_buyNow"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:text="Buy Now"
                 android:textSize="10sp"
@@ -104,7 +102,7 @@
                 android:textColor="@color/white"
                 android:background="@drawable/btn_bg_detailed"
                 android:layout_gravity="end"
-                android:layout_margin="5dp"
+                android:layout_margin="8dp"
                 />
 
         </LinearLayout>
