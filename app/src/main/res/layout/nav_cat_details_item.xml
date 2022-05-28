@@ -18,12 +18,13 @@
         >
 
 
-        <ImageView
+        <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/nav_cat_details_img"
             android:layout_width="120dp"
             android:layout_height="125dp"
             android:src="@drawable/fruits"
             android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp"
             />
 
 
