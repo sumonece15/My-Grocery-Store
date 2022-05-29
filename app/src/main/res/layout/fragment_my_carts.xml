@@ -61,7 +61,7 @@
             android:id="@+id/totalPrice_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/purple_200"
+            android:background="@color/white"
             android:text="Total Price : 0$"
             android:textAlignment="center"
             android:textSize="28sp"
