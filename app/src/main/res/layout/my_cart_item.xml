@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Product Name"
-                android:textColor="@color/black"
+                android:textColor="@color/Grey"
                 android:textSize="16sp"
                 />
 
