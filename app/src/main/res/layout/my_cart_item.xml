@@ -186,8 +186,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Total Quantity :"
-                android:textSize="16sp"
-                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textColor="@color/Grey"
                 />
 
             <TextView
