@@ -97,7 +97,7 @@
                 android:layout_weight="1"
                 android:text="Current Date :"
                 android:textSize="16sp"
-                android:textColor="@color/black"
+                android:textColor="@color/Grey"
                 />
 
             <TextView
