@@ -196,8 +196,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Total Quantity"
-                android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textColor="@color/Grey"
+                android:textSize="11sp"
                 />
 
 
