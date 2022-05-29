@@ -126,8 +126,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Current Time :"
-                android:textSize="16sp"
-                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textColor="@color/Grey"
                 />
 
             <TextView
@@ -136,8 +136,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Current Time"
-                android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textColor="@color/Grey"
+                android:textSize="11sp"
                 />
 
 
