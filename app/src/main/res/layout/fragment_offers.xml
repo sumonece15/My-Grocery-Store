@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="21sp"
+            android:textSize="22sp"
             android:text="No offers are available right now"
             android:fontFamily="serif-monospace"
             android:textAlignment="center"
